@@ -1,0 +1,309 @@
+.items.section {
+    background:rgba(0,0,0,.04);
+}
+
+.items .item {
+    padding:.8em;
+    background:#fff;    
+}
+
+.item:nth-child(n+2) {
+    margin-top:.24em;
+}
+
+
+.item img {
+    display:inline-block;
+    width:64px;
+    height:64px;
+    margin-right:.89em;
+    font-size:.9em;
+}
+
+.item h2 {
+    font-size:1.1em;
+}
+
+.item > div {
+    display:inline-block;
+    width:calc(100% - 64px - .89em);
+    font-size:.9em;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.skills.section {
+    background:rgba(0,0,0,.04);
+}
+
+.skill {
+    padding:.8em;
+    background:#fff;
+    line-height:1.45;
+}
+
+.skill h2 {
+    font-size:1.1em;
+}
+
+.skill:nth-child(n+2) {
+    margin-top:.24em;
+}
+
+.skill img {
+    display:inline-block;
+    width:64px;
+    height:64px;
+    margin-right:.89em;
+    font-size:.9em;
+}
+
+.skill > div {
+    display:inline-block;
+    width:calc(100% - 64px - .89em);
+    font-size:.9em;
+}
+
+.lore.section {
+    border-top:1px solid rgba(0,0,0,.04);
+    padding:1.6em;
+    padding-right:6.9em;
+    padding-bottom:4.2em;
+}
+
+.lore h1,
+.skins h1 {
+    font-size:1.6em;
+    margin-bottom:.24em;
+}
+
+p {
+    line-height:1.45;
+    margin-bottom:1.3em;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.splash {
+    padding:8.5em 0 0 0;
+    background-color:#000;
+    background-size:cover;
+    background-position:left 10%;
+}
+
+.title {
+    color:#fff;
+    font-size:2em;
+    font-weight:bold;
+    #text-transform:uppercase;
+}
+
+.subtitle {
+    color:#fff;
+}
+
+.section {
+    padding:1.6em;
+    margin:0px auto;
+}
+
+.champs {
+}
+
+.portrait {
+    position:relative;
+    display:inline-block;
+    width:calc((100% - 4 * .38em) / 5);
+    min-height:260px;
+    margin-right:.38em;
+    margin-bottom:.38em;
+    overflow:hidden;
+    background:#080808;
+}
+
+.portrait:nth-child(5n) {
+    margin-right:0;
+}
+
+.portrait img {
+    max-width:110%;
+    margin-top:-20%;
+    position:relative;
+    left:-5%; top:1em;
+}
+
+.portrait .overlay {
+    position:absolute;
+    left:0; top:0; width:100%; height:100%;
+
+    background:linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.6) 80%, rgba(0,0,0,.95));
+}
+
+.portrait a:hover .overlay,
+.portrait.bright .overlay{
+    background:linear-gradient(180deg, rgba(0,0,0,0) 70%, rgba(0,0,0,.5) 80%, rgba(0,0,0,.99));
+}
+
+.portrait .overlay > div {
+    position:absolute;
+    bottom:0; left:0;
+    padding:.62em;
+}
+
+.portrait .name {
+    color:rgba(255,255,255,1);
+    font-weight:bold;
+}
+
+.portrait .blurb {
+    font-size:.8em;
+    color:rgba(255,255,255,.7);
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.logo {
+    padding:1.6em 1.6em;
+    margin-bottom:1px;
+    color:rgba(255,255,255,.8);
+    text-align:left;
+    font-size:.95em;
+}
+
+.logo em {
+    font-style:normal;
+    font-size:1.6em;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+}
+
+.links div {
+    padding:.8em 1.6em;
+
+    background:rgba(255,255,255,.02);
+    border-bottom:1px solid rgba(255,255,255,.1);
+
+    color:rgba(255,255,255,.3);
+    font-size:.95em;
+    font-weight:bold;
+    text-transform:lowercase;
+    text-align:left;
+}
+
+.links a:first-child div {
+    border-top:1px solid rgba(255,255,255,.1);
+}
+
+.links div.selected {
+    background:rgba(255,255,255,.05);
+    color:#2AA3CC;
+}
+
+.links a:hover div {
+    background:rgba(255,255,255,.03);
+}
+
+.links a:hover div.selected {
+    background:rgba(255,255,255,.07);
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.app {
+    display:flex;
+    display:-webkit-flex
+}
+
+.app-menu {
+    min-height:100vh;
+    width:24%;
+    background:#111;
+    color:#fff;
+    text-align:center;
+}
+
+.app-content {
+    width:76%;
+    display:flex;
+    display:-webkit-flex
+}
+
+.loading {
+    margin:auto;
+    text-align:center;
+    color:#2AA3CC;
+}
+
+.loaded {
+    width:100%;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+html {
+    background-color:#aaa;
+    background-image:url("http://euw.leagueoflegends.com/sites/default/files/upload/environmentart-sru-04_1920.jpg");
+    #background-image:url("http://cdn.leagueoflegends.com/game-info/1.1.9/images/backdrop/bg-summoners-rift.jpg");
+    #background-image:url("/img/bg.png");
+    background-size:cover;
+    background-attachment: fixed;
+    height:100%;
+    color:#444;
+    font-size:17px;
+    font-family:Lato, sans-serif;
+}
+
+.serif {
+    font-family:Marcellus SC, IM Fell English SC, serif;
+}
+
+.wrapper {
+    max-width:100%;
+    width:1175px;
+    min-height:100%;
+    margin:0px auto;
+
+    background:#fff;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+* {margin:0;padding:0;}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+    min-height:100%;
+}
+
+div, img, ul {
+	vertical-align:top;
+}
+
+ul {list-style: none;}
+
+a:link, a:visited, a:active, a:hover {
+	text-decoration: none;
+	color:inherit;
+}
+
+input[type=text],
+input[type=password] {
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+.vm {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.spacer {
+	height:100%;
+}

@@ -1,0 +1,20 @@
+<template name="champions">
+    <div class="splash" style="background-image:url('{{splash}}')">
+        <div class="section">
+            <span class="title serif">Champions</span>
+        </div>
+    </div>
+    <div class="champs section">
+        {{#each champs}}<div class="portrait">
+                <a href="{{pathFor 'champion' _id=this.id}}">
+                    <img src="{{portrait}}"/>
+                    <div class="overlay">
+                        <div>
+                            <div class="serif name">{{name}}</div>
+                            <div class="serif blurb">{{title}}</div>
+                        </div>
+                    </div>
+                </a>
+        </div>{{/each}}
+    </div>
+</template>

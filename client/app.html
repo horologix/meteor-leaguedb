@@ -1,0 +1,16 @@
+<template name="app">
+    <div class="app wrapper">
+        <div class="app-menu">
+            {{> menu}}
+        </div><div class="app-content">
+            {{#unless loaded}}
+            <div class="loading serif">
+                LOADING...
+            </div>
+            {{/unless}}
+            <div class="loaded" style="display:{{showLoaded}}">
+                {{> yield}}
+            </div>
+        </div>
+    </div>
+</template>

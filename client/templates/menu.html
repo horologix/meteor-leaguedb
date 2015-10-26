@@ -1,0 +1,14 @@
+<template name="menu">
+    <div class="logo serif">
+        <em>League of Legends</em>
+        <br>
+        database
+    </div> 
+    <div class="links">
+        {{#each links}}
+            <a href="{{pathFor name}}">
+                <div class="serif {{selected}}"><span class="{{icon}}"></span> {{text}}</div>
+            </a>
+        {{/each}}
+    </div>
+</template>

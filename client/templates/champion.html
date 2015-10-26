@@ -1,0 +1,47 @@
+<template name="champion">
+    {{#with champ}}
+        <div class="splash" style="background-image:url('{{splash}}')">
+            <div class="section">
+                <span class="title serif">{{name}}</span><br>
+                <span class="subtitle serif">{{title}}</span>
+            </div>
+        </div>
+        <div class="skills section">
+            <div class="skill">
+                {{#with passive}}
+                    <img src="{{psprite}}"><div class="">
+                        <h2 class="serif">{{name}}</h2>
+                        {{{description}}}
+                    </div>
+                {{/with}}
+            </div>
+            {{#each spells}}
+                <div class="skill">
+                    <img src="{{ssprite}}"><div class="">
+                        <h2 class="serif">{{name}}</h2>
+                        {{{description}}}
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+        <div class="skins section">
+            <h1 class="serif">Skins</h1>
+            <div class="champs">
+                {{#each skins}}<div class="portrait bright">
+                        <img src="{{skin}}"/>
+                        <div class="overlay">
+                            <div>
+                                <div class="serif name">{{name}}</div>
+                            </div>
+                        </div>
+                </div>{{/each}}
+            </div>
+        </div>
+        <div class="lore section">
+            <h1 class="serif">Lore</h1>
+            {{#each lore}}
+                <p>{{text}}</p>
+            {{/each}}
+        </div>
+    {{/with}}
+</template>
