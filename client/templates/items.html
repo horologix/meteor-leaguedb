@@ -5,13 +5,11 @@
         </div>
     </div>
     <div class="items section">
-        {{#each items}}
-            <div class="item">
-                <img src="{{icon}}"><div>
-                    <h2 class="serif name">{{name}}</h2>
-                    {{{description}}}
-                </div>
+        {{#each items}}<div class="item">
+            <img src="{{icon}}"><div>
+                <h2 class="serif name">{{name}}</h2>
+                {{{plaintext}}}
             </div>
-        {{/each}}
+        </div>{{/each}}
     </div>
 </template>

@@ -3,12 +3,19 @@
 }
 
 .items .item {
+    display:inline-block;
+    width:calc((100% - 2 * .62em) / 3);
+    margin-right:.62em;
     padding:.8em;
     background:#fff;    
 }
 
-.item:nth-child(n+2) {
-    margin-top:.24em;
+.item:nth-child(n+4) {
+    margin-top:.62em;
+}
+
+.item:nth-child(3n) {
+    margin-right:0;
 }
 
 
@@ -16,18 +23,20 @@
     display:inline-block;
     width:64px;
     height:64px;
-    margin-right:.89em;
-    font-size:.9em;
+    margin-right:1em;
+    font-size:.8em;
 }
 
 .item h2 {
-    font-size:1.1em;
+    font-size:1.2em;
 }
 
 .item > div {
     display:inline-block;
-    width:calc(100% - 64px - .89em);
-    font-size:.9em;
+    overflow:hidden;
+    width:calc(100% - 64px - 1em);
+    height:56px;
+    font-size:.8em;
 }
 
 /*--------------------------------------------------------------------------------*/
@@ -43,7 +52,7 @@
 }
 
 .skill h2 {
-    font-size:1.1em;
+    font-size:1.2em;
 }
 
 .skill:nth-child(n+2) {
@@ -54,14 +63,14 @@
     display:inline-block;
     width:64px;
     height:64px;
-    margin-right:.89em;
-    font-size:.9em;
+    margin-right:1em;
+    font-size:.8em;
 }
 
 .skill > div {
     display:inline-block;
-    width:calc(100% - 64px - .89em);
-    font-size:.9em;
+    width:calc(100% - 64px - 1em);
+    font-size:.8em;
 }
 
 .lore.section {
@@ -74,7 +83,7 @@
 .lore h1,
 .skins h1 {
     font-size:1.6em;
-    margin-bottom:.24em;
+    margin-bottom:.8em;
 }
 
 p {
@@ -241,7 +250,7 @@ p {
 /*--------------------------------------------------------------------------------*/
 
 html {
-    background-color:#aaa;
+    background-color:#080808;
     background-image:url("http://euw.leagueoflegends.com/sites/default/files/upload/environmentart-sru-04_1920.jpg");
     #background-image:url("http://cdn.leagueoflegends.com/game-info/1.1.9/images/backdrop/bg-summoners-rift.jpg");
     #background-image:url("/img/bg.png");
