@@ -7,11 +7,11 @@ Template.champions.onDestroyed(function() {
 });
 
 Template.champions.helpers({
-    splash: "http://na.leagueoflegends.com/sites/default/files/upload/art/teambuilder-wallpaper.jpg",
+    splash: "/img/champions_splash.jpg",
     champs: function() {
         return Session.get("CHAMPIONS");
     },
     portrait: function() {
-        return "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/"+this.key+"_0.jpg";
+        return LeagueAPI.getChampionPortrait(this.key);
     }
 });
