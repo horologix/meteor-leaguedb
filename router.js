@@ -18,3 +18,7 @@ Router.route("champion", {
 Router.route("items", {
     path: "/items"
 });
+
+Router.route("stats-overview", {
+    path: "/stats"
+});

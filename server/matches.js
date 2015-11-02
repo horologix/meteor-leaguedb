@@ -1,4 +1,4 @@
-var REQUEST_LIMIT = 20;
+var REQUEST_LIMIT = 50;
 
 // TODO: filter matches by ranking
 function populateMatches() {
@@ -64,7 +64,8 @@ function calculateWinrates() {
     });
 
     _.each(champions, function(champion) {
-        console.log(champion);
+        champion.games = champion.wins+champion.losses;
+        champion.winrate = champion.wins/champion.games;
         Champions.insert(champion);
     });
 

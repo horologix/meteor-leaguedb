@@ -1,0 +1,25 @@
+<template name="statsOverview">
+    <div class="splash" style="background-image:url('{{splash}}')">
+        <div class="section">
+            <span class="title serif">Champion Overview</span><br>
+        </div>
+    </div>
+    <div class="lore section">
+        <h1 class="serif">Popularity</h1>
+        {{#each popularity}}
+            {{championName}}
+            {{winrate}}
+            {{games}}
+            <br>
+        {{/each}}
+    </div>
+    <div class="lore section">
+        <h1 class="serif">Winrates</h1>
+        {{#each winrates}}
+            {{championName}}
+            {{winrate}}
+            {{games}}
+            <br>
+        {{/each}}
+    </div>
+</template>
