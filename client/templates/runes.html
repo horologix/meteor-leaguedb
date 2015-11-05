@@ -1,0 +1,14 @@
+<template name="runes">
+    <div class="splash" style="background-image:url('{{splash}}')">
+        <div class="section">
+            <span class="title serif">Runes</span>
+        </div>
+    </div>
+    <div class="items section">
+        {{#each runes}}<div class="item">
+            <img src="{{icon}}"><div>
+                <h2 class="serif name">{{name}}</h2>
+            </div>
+        </div>{{/each}}
+    </div>
+</template>

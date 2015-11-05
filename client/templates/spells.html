@@ -1,0 +1,15 @@
+<template name="spells">
+    <div class="splash" style="background-image:url('{{splash}}')">
+        <div class="section">
+            <span class="title serif">Spells</span>
+        </div>
+    </div>
+    <div class="skills section">
+        {{#each spells}}<div class="skill">
+            <img src="{{icon}}"><div>
+                <h2 class="serif name">{{name}}</h2>
+                {{{description}}}
+            </div>
+        </div>{{/each}}
+    </div>
+</template>

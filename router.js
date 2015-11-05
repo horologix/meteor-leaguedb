@@ -19,6 +19,14 @@ Router.route("items", {
     path: "/items"
 });
 
+Router.route("runes", {
+    path: "/runes"
+});
+
+Router.route("spells", {
+    path: "/spells"
+});
+
 Router.route("stats-overview", {
     path: "/stats"
 });

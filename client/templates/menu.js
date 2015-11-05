@@ -1,7 +1,9 @@
 var links = [
     {name: "champions", text: "Champions", icon:"fa fa-fw fa-group"},
     {name: "items", text: "Items", icon:"fa fa-fw fa-flask"},
-    {name: "stats-overview", text: "Stats", icon:"fa fa-fw fa-bar-chart"}
+    {name: "spells", text: "Spells", icon:"fa fa-fw fa-book"},
+    {name: "runes", text: "Runes", icon:"fa fa-fw fa-asterisk"}
+    //{name: "stats-overview", text: "Stats", icon:"fa fa-fw fa-bar-chart"}
 ];
 
 Template.menu.helpers({
