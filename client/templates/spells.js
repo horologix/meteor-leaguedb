@@ -3,7 +3,6 @@ var spells = new ReactiveVar([]);
 Template.spells.onCreated(function() {
     LeagueAPI.getSpells(function(err, res) {
         spells.set(_.map(res.data.data, function(v) {return v;}));
-        console.log(spells.get());
         Session.set("ROUTE_LOADED", true);
     });
 });
